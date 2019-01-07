@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 		<html lang="en">
+			<head>
+				<meta charset="UTF-8">
+				<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+				<link rel="stylesheet" href="flaneur_blog.css">
+				<title>Flaneur blog</title>
+			</head>		
+			<main>
+				<div class="grid">
+					<div id="pageLogo"><img src="Logos/bicycle_logo.png" alt="Intrepidflaneur Logo"></div> 
+							
 
-					<head>
-
-						<meta charset="UTF-8">
-						<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-						<link rel="stylesheet" href="flaneur_blog.css">
-						<title>Flaneur blog</title>
-
-					</head>
-					<body>
-
-						<main>
-							<div class="grid">
-								<div id="pageLogo"><img src="Logos/bicycle_logo.png" alt="Intrepidflaneur Logo"></div> 
-								<div id="header"> 
-									
-									<nav>
+							<header id="header"> 	
+								<nav>
 									<ul class="container">
-									<li><a href="">Home</a></li>
-									<!-- <li><a href="">Site Map</a></li> -->
-									<li><a href="">About</a></li>
-									<li><a href="">Contact</a></li>
-									<li><input type="search" placeholder ="Type your search here" id="searchbar"></li>
+										<li><a href="">Home</a></li>
+										<li><a href="">About</a></li>
+										<li><a href="">Contact</a></li>
+										<li><input type="search" placeholder ="Type your search here" id="searchbar"></li>
 									</ul>
-									</nav>
+								</nav>
+							</header>
+
+							<div class="article_1_Grid">
+								<div class="flexItem_1">
+									<h2 class="cphViewsText">The best views <br> Copenhagen <br> has to offer</h2>
+										<div class="cphViews"><picture><img src= "Images/christiansborg_palace.jpg" alt="Best views over Copenhagen"></picture></div>
+											<div class="middle">
+												<div class="cphViews_hover_text">Read Article</div>
+
+										</div>											  											
+									</div>	
 								</div>
-
-								<div class="article_1_Grid">
-									<div class="flexItem_1">
-										<h2 class="cphViewsText">The best views <br> Copenhagen <br> has to offer</h2>
-											<div class="cphViews"><picture><img src= "Images/christiansborg_palace.jpg" alt="Best views over Copenhagen"></picture></div>
-												<div class="middle">
-													<div class="cphViews_hover_text">Read Article</div>
-
-											</div>											  											
-										</div>	
-									</div>
 							    
 
 
 								<div class="article_2_Grid">
 									<div class="flexItem_2">
 										<h2 class="bestBahnMi_text">The Top 5 <br> Bahn Mi <br> in Copenhagen</h2>
-											<div class="bahnMi"><picture><img src= "https://unsplash.it/400/200" alt="Best Bahn Mi in Town"></picture></div>
+											<div class="bahnMi"><picture><img src= "Images/christiansborg_palace.jpg" alt="Best Bahn Mi in Town"></picture></div>
 												<div class="middle_2">
 													<div class="bestBahnMi_hover_text">Read Article</div>
 											</div>											  											
@@ -53,7 +48,7 @@
 								<div class="article_3_Grid">
 									<div class="flexItem_3">
 										<h2 class="streetTour_text">We Out Here: <br> Street Review <br> Elmegade</h2>
-											<div class="elmegade"><picture><img src= "https://unsplash.it/400/200" alt="Elmegade"></picture></div>
+											<div class="elmegade"><picture><img src= "Images/christiansborg_palace.jpg" alt="Elmegade"></picture></div>
 												<div class="middle_3">
 													<div class="elmegade_hover_text">Read Article</div>
 											</div>											  											
@@ -63,7 +58,7 @@
 								<div class="article_4_Grid">
 									<div class="flexItem_4">
 										<h2 class="bestParks_text">Green Space: <br> The best parks <br> CPH has to offer</h2>
-											<div class="parks"><picture><img src= "https://unsplash.it/400/200" alt="Green space"></picture></div>
+											<div class="parks"><picture><img src= "Images/christiansborg_palace.jpg" alt="Green space"></picture></div>
 												<div class="middle_4">
 													<div class="bestParks_hover_text">Read Article</div>
 											</div>											  											
@@ -73,46 +68,27 @@
 								<div class="article_5_Grid">
 									<div class="flexItem_5">
 										<h2 class="bestBakeries_text">A bakers dozen: <br> The Top bakeries <br>from all over CPH </h2>
-											<div class="bakeries"><picture><img src= "https://unsplash.it/400/200" alt="Bakeries"></picture></div>
+											<div class="bakeries"><picture><img src= "Images/christiansborg_palace.jpg" alt="Bakeries"></picture></div>
 												<div class="middle_5">
 													<div class="bestBakeries_hover_text">Read Article</div>
 											</div>											  											
 										</div>	
 									</div>
-
-								
-								
-							
-
-							
-
-
-								<!-- <div class="article_2_Grid">article box 2</div> -->
-								<!-- <div class="article_3_Grid">article box 3</div>
-								<div class="article_4_Grid">article box 4</div>
-								<div class="article_5_Grid">article box 5</div>
-								 -->
-								
-											
-
-										
-
-										<!-- <div class="gridItem_3">
-												<h2 class="bestBahnMi_text">The Top 5 <br> Bahn Mi <br> in Copenhagen</h2>
-											</div>
-											<div class="gridItem_4">
-												<div class="bestBahnMi_img"><picture><img src="images/coffee_collective.jpg" alt="Best Bahn Mi in Copenhagen"></picture>										
-													</div>	 -->
-
-												
-									
-								
-									<footer class="footer">
-											<div id = "copyright"> &copy; | 2018</div>
-											Footer
-									</footer>
 							</div>
-						</main>
-						<script src="jquery-3.3.1.min.js"></script>
-					</body>
 
+							</main>
+						</div>	
+					
+								 <footer class="footer">
+												<div> theintrepidflaneur.com <span id = "copyright">&copy;</span> | 2018</div>
+												<div>Terms & conditions</div> 
+												<div>Cookies Policy</div>
+												<div>Purchases Terms & Conditions and Refund</div>
+								</footer>
+						
+						</main>
+				</body>
+
+				<script src="flaneur_blog.js"></script>
+				
+			</html>

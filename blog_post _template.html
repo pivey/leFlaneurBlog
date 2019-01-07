@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		
+		html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.wrapper {
+	
+  margin: 0 auto;  /*centres the text in the middle of the page*/
+  padding-top: 64px;
+  max-width: 640px; /*restrict the width for more concise viewing*/
+  width: 94%;
+  text-align:justify;
+}
+
+.wrapper h1 {
+  
+  text-align: center;
+}
+
+/**
+ * Footer Styles
+ */
+
+.footer {
+  position: absolute;
+  display:flex;
+  background-color:hsl(195, 63%, 70%);
+  justify-content: space-around;
+  align-items:center;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}
+
+#header {
+ 	justify-content: center;
+	background-color:hsl(195, 63%, 70%);
+	position:fixed;
+	width:100vw;
+	z-index:3; 
+	height:40px;
+	transition: top 0.5s;
+}
+
+.container {
+	display:flex;
+	width:100vw;
+
+}
+
+.container  > li {
+	display:flex;
+	font-size:1.1rem;
+	display: inline-flex;
+	flex: 1;
+	list-style-type:none;
+	justify-content: center;
+	margin-top: -7px;
+
+}
+
+.container a {
+	text-decoration:none;
+	color:black;
+	
+
+}
+	</style>
+</head>
+<body>
+
+	<header id="header"> 	
+		<nav>
+			<ul class="container">
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Contact</a></li>
+				<li><input type="search" placeholder ="Type your search here" id="searchbar"></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="wrapper">
+  <h1>CSS “Always on the bottom” Footer</h1>
+
+  <p>I often find myself designing a website where the footer must rest at the bottom of the page, even if the content above it is too short to push it to the bottom of the viewport naturally.</p>
+
+  <p>However, if the content is taller than the user’s viewport, then the footer should disappear from view as it would normally, resting at the bottom of the page (not fixed to the viewport).</p>
+
+  <p>If you know the height of the footer, then you should set it explicitly, and set the bottom padding of the footer’s parent element to be the same value (or larger if you want some spacing).</p>
+
+  <p>This is to prevent the footer from overlapping the content above it, since it is being removed from the document flow with <code>position: absolute;</code>.</p>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores minus, voluptatum consequatur nobis quos, quibusdam esse officiis vel expedita id ullam, soluta provident! Vel, laudantium? Tempora eveniet, nihil voluptatum blanditiis? Ipsum pariatur commodi reiciendis nisi, animi dolorem! Incidunt asperiores rerum ducimus deserunt, atque perferendis voluptas debitis. Ab magnam dolor ipsam fugiat nobis eius dolorem ullam voluptatum aliquam minus itaque eaque delectus quasi accusantium, laudantium aspernatur laborum veniam quidem placeat. Doloribus quam itaque eveniet possimus, debitis architecto ipsum expedita magnam ducimus deleniti maxime, unde odio alias earum velit nam libero. Provident quia, dolore, illo assumenda optio a quae, delectus ducimus id harum totam iste nisi ex nesciunt at, cum debitis corporis laboriosam. Alias dicta iusto asperiores, aliquid, rerum nulla natus iste praesentium facere quia suscipit animi ipsa recusandae ducimus, voluptas tenetur deleniti! Architecto nobis sequi expedita officia at dolores ab doloribus, dignissimos quae itaque ullam corporis tenetur quos reiciendis ratione, animi cum temporibus dolorem non voluptas dolorum? Officiis consequuntur, non quibusdam aut soluta. Harum itaque placeat veniam, voluptatum dicta, nihil earum deserunt. Eum expedita nam ex mollitia nemo cupiditate necessitatibus error quibusdam autem dolore iusto, nobis laudantium repudiandae. Quia, architecto modi libero delectus. Rem nisi recusandae officiis nobis similique, natus, itaque magnam laborum, eum, ipsa ut. Quia architecto tempore, molestias id! Quidem fugiat harum laudantium porro quaerat molestias consequuntur, provident qui reiciendis, consequatur cupiditate, sapiente rerum et tenetur! Repellendus molestiae doloremque beatae amet distinctio assumenda. Excepturi, eaque, sit repellendus est, consequuntur ducimus provident ea distinctio cumque vitae magni in impedit, rem obcaecati perspiciatis quas quisquam id ipsam velit dolores! Ex provident fugit vel placeat odio, assumenda consequatur rem error repudiandae? Veritatis dolorem atque, illum laboriosam rerum totam laborum unde quis eveniet veniam est sit beatae architecto, vero fugiat labore tenetur vel eligendi ducimus blanditiis! Sunt voluptates perspiciatis pariatur sit qui, delectus.</p>
+</div>
+
+<footer class="footer">
+	<div> theintrepidflaneur.com <span id = "copyright">&copy;</span> | 2018</div>
+	<div>Terms & conditions</div> 
+	<div>Cookies Policy</div>
+	<div>Purchases Terms & Conditions and Refund</div>
+</footer>
+
+</body>
+
+<script>
+	var prevScrollpos = window.pageYOffset;
+
+	window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
+  } else {
+    document.getElementById("header").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+</html>
