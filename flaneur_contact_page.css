@@ -1,0 +1,253 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 10rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: hsl(5, 55%, 48%);
+}
+
+.textWrapper {
+	
+  margin: 0 auto;  /*centres the text in the middle of the page*/
+  padding-top: 64px;
+  max-width: 640px; /*restrict the width for more concise viewing*/
+  width: 94%;
+  text-align:justify;
+  line-height: 0.2rem;
+}
+
+h1 {
+  line-height: 1rem;
+}
+
+.textWrapper h1 {
+  
+  text-align: center;
+  margin-top: 10px;
+  line-height:2.8rem;
+  color:#f4f4f4;
+ /* font-family: 'Mukta', sans-serif;*/
+ font-family: 'Noto Serif SC', serif;
+}
+
+/**
+ * Footer Styles
+ */
+
+.footer {
+  position: absolute;
+  display:flex;
+  background-color:hsl(195, 63%, 70%);
+  justify-content: space-around;
+  align-items:center;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
+#header {
+ 	/*justify-content: center;*/
+	background-color:hsl(195, 63%, 70%);
+	position:fixed;
+	width:100vw;
+	z-index:3; 
+	height:50px;
+	transition: top 0.5s;
+}
+
+.container {
+	display:inline-flex;
+	width:100vw;
+}
+
+.container  > li {
+	display:flex;
+	font-size:1.1rem;
+	/*display: inline-flex;*/
+	flex: 1;
+	list-style-type:none;
+	justify-content: center;
+	margin-top: -2px;
+}
+
+#header {
+ 	justify-content: center;
+	background-color:hsl(195, 63%, 70%);
+	position:fixed;
+	width:100vw;
+	z-index:3; 
+	height:50px;
+	transition: top 0.5s;
+}
+
+
+.container {
+	display:flex;
+	width:100vw;
+}
+
+.container  > li {
+	display:flex;
+	font-size:1.1rem;
+	display: inline-flex;
+	flex: 1;
+	list-style-type:none;
+	justify-content: center;
+	margin-top: -2px;
+}
+
+.container a {
+	text-decoration:none;
+	color:black;
+}
+
+#home_button {
+	margin-right: -250px;
+}
+
+#contact_button {
+	margin-left: -250px;
+}
+
+.container a {
+	text-decoration:none;
+	color:black;
+}
+
+#pageLogo img {
+	width:180px;
+	height: 40px;
+	z-index:1;
+	position:relative;
+	margin-top: 5px;
+	z-index:4;
+	background-size:contain;
+	transition: top 1s;
+	
+}
+
+/*extra styling for the about page
+*/
+
+.flex{
+	display:flex;
+
+}
+
+#contactpage_image {
+	flex:1;
+	margin-left: -180px;
+	width: 450px;
+	height:550px;
+	float:left;
+	z-index:0;	
+}
+
+#description{
+	flex:1;
+	background-color:hsl(5, 55%, 48%);
+	width: 600px;
+	height: 650px;
+	font-family: 'Mukta', sans-serif;
+}
+
+form {
+	position: relative;
+	
+	
+	font-weight:bold;
+	width:300px;
+	background-color: hsl(5, 55%, 48%);
+}
+
+#feedbackTitle {
+	position: relative;
+	color:#f4f4f4;
+	height:20px;
+	width:400px;
+	font-size: 2.5rem;
+	font-family: 'Noto Serif SC', serif;
+}
+
+#emailBox {
+	position:relative;
+	margin-left: 65px;
+	margin-top: -10px;
+}
+
+#comments {
+	position: absolute;
+	margin-top: 25px;
+	margin-left: 0px;
+}
+
+#commentBox{
+	position: relative;
+	margin-left: 120px;
+}
+
+input {
+	border:1px solid black;
+	background-color: #f4f4f4;
+}
+
+textarea {
+	border:1px solid black;
+	background-color: #f4f4f4;
+	width:10.2rem;
+	height:5rem;
+}
+
+button {
+	background-color: hsl(195, 63%, 70%);
+	border:1px solid black;
+	margin-top: 10px;
+	width:160px;
+	height:30px;
+	font-size:1rem;
+	font-weight:bold;
+	padding:0px;
+	font-family: 'Noto Serif SC', serif;
+
+}
+
+#contactpage_image_2 {
+	position: relative;
+	margin-top: -100px;
+	width: 450px;
+	height:550px;
+}
+
+#formBox {
+	position:relative;
+	left:55%;
+	margin-top: -450px;
+	width:450px;
+	height: 300px;
+}
+
+#firstNameBox {
+	margin-left: 25px;
+}
+
+label {
+	color: #f4f4f4;
+	/*font-size:1.4rem;*/
+	font-family: 'Noto Serif SC', serif;
+}

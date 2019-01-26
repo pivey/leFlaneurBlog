@@ -13,6 +13,7 @@ html {
 body {
   position: relative;
   margin: 0;
+  padding-top:0;
   padding-bottom: 6rem;
   min-height: 100%;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -21,9 +22,10 @@ body {
 .wrapper {
   margin: 0 auto;  /*centres the text in the middle of the page*/
   padding-top: 64px;
-  max-width: 640px; /*restrict the width for more concise viewing*/
+  max-width: 620px; /*restrict the width for more concise viewing*/
   width: 94%;
   text-align:justify;
+  line-height:1.5rem;
 }
 
 .wrapper h1 {
@@ -47,8 +49,53 @@ body {
   text-align: center;
 }
 
+#page_logo img {
+  width:180px;
+  height: 40px;
+  margin-top: 5px;
+  z-index:1;
+  position:absolute;
+  z-index:4;
+  background-size:contain;
+  transition: top 1s;
+}
+
 #header {
- 	justify-content: center;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+  
+div.container6 {
+  height: 5em;
+  width:100vw;
+  background-color:hsl(195, 63%, 70%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+
+#pageLogo {
+  margin: 0 
+  width:180px;
+  height: 40px;
+}
+
+ li {
+    color:black;
+    list-style:none;
+    flex: 1 0 20vw;
+    text-align:center;
+  }
+
+  a {
+    text-decoration:none;
+    color:black;
+  }
+
+/*#header {
+ 	display:flex;
+ 	justify-content: space-between;
 	background-color:hsl(195, 63%, 70%);
 	position:fixed;
 	width:100vw;
@@ -58,43 +105,44 @@ body {
 }
 
 .container {
-	display:flex;
+	display:inline-flex;
 	width:100vw;
 }
 
 .container  > li {
 	display:flex;
 	font-size:1.1rem;
-	display: inline-flex;
-	flex: 1;
+	/*display: inline-flex;*/
+/*	flex: 1;
 	list-style-type:none;
 	justify-content: center;
 	margin-top: -2px;
+}*/
+
+/*#home_button {
+	margin-right: -250px;
+}
+
+#contact_button {
+	margin-left: -250px;
 }
 
 .container a {
 	text-decoration:none;
-	color:black;
-}
+	color:black;*/
+}*/
 
 
 /*************************************************************/
 			/*page content beyond header and footer*/
 
 
-:root {
-
-	--white: #FAFAFA;
-	--blue: #3E66E8;
-}
-
 #pageLogo img {
-	width:60px;
-	height: 60px;
+	width:180px;
+	height: 40px;
+	margin-top: -6px;
 	z-index:1;
 	position:relative;
-	margin-top: -8px;
-	margin-left: 10px;
 	z-index:4;
 	background-size:contain;
 	transition: top 1s;
@@ -136,7 +184,7 @@ body {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	line-height: 2.5rem;
-	background-color: hsl(80, 74%, 45%);
+	background-color: hsl(242, 59%, 57%);
 	width: 360px;
 	height: 160px;
 	padding-top:20px;
@@ -176,8 +224,8 @@ body {
 }
 
  .cphViews_hover_text{
-  background-color: hsl(80, 74%, 45%);
-  color: --white;
+  background-color: hsl(242, 59%, 57%);
+  color: #FAFAFA;
   font-size: 16px;
   font-weight: bold;
   white-space: nowrap;
@@ -254,7 +302,7 @@ body {
 
  .bestBahnMi_hover_text{
   background-color: hsl(4, 76%, 47%);
-  color: --white;
+  color: #FAFAFA;
   font-size: 16px;
   font-weight: bold;
   white-space: nowrap;
@@ -332,7 +380,7 @@ body {
 
  .elmegade_hover_text{
   background-color: hsl(198, 81%, 57%);
-  color: --white;
+  color: #FAFAFA;
   font-size: 16px;
   font-weight: bold;
   white-space: nowrap;
@@ -367,7 +415,7 @@ body {
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	line-height: 2.5rem;
-	background-color: hsl(242, 59%, 57%);
+	background-color: hsl(80, 74%, 45%);
 	width: 360px;
 	height: 160px;
 	padding-top:20px;
@@ -404,14 +452,14 @@ body {
 .middle_4 {
   transition: .7s ;
   position: absolute;
-  background-color:hsl(242, 59%, 57%);
+  background-color:hsl(80, 74%, 45%);
   color: white;
   z-index: 0;
 }
 
  .bestParks_hover_text{
-  background-color: hsl(242, 59%, 57%);
-  color: --white;
+  background-color: hsl(80, 74%, 45%);
+  color: #FAFAFA;
   font-size: 16px;
   font-weight: bold;
   white-space: nowrap;
@@ -492,7 +540,7 @@ body {
 
  .bestBakeries_hover_text{
   background-color: hsl(35, 70%, 50%);
-  color: --white;
+  color: #FAFAFA;
   font-size: 16px;
   font-weight: bold;
   white-space: nowrap;
@@ -511,7 +559,7 @@ body {
 
 #socialMediaBar {
 	position: fixed;
-	left: 5%;
+	left: 8%;
 	top: 25%;
 }
 
@@ -556,6 +604,51 @@ body {
 	margin-top: -5px;
 }
 
+@media screen and (max-width: 640px) {
+	#header {
+		display:flex;
+		justify-content: center;
+	}
+
+	#header .container{
+		display : inline-flex;
+		margin:0;
+		padding:0;
+		margin-top: 65px;
+		
+	}
+
+	.wrapper {
+		padding-top:20px;
+		max-width: 520px;
+	}
+
+	.wrapper h1 {
+ 		 line-height:2.5rem;
+ 		 padding-bottom:10px;
+}
+
+	.container  > li {
+		display: flex;
+		font-size: 1.3rem;
+		flex: 2;
+		list-style-type:none;
+		
+}
+
+	#myBtn {
+    	left:41%;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+	
+		
+	}
+
+	}
+	}
 
 
 

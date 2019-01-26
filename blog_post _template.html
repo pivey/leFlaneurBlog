@@ -2,103 +2,38 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<html lang="en"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="blog_post_template.css">
+    <link rel="stylesheet" href="flaneur_blog.css">
+    <link rel="stylesheet" href="blog_post_template.css">
 	<title>Document</title>
 
-	<style>
-		
-html {
-  height: 100%;
-  box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-body {
-  position: relative;
-  margin: 0;
-  padding-bottom: 6rem;
-  min-height: 100%;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-.wrapper {
-	
-  margin: 0 auto;  /*centres the text in the middle of the page*/
-  padding-top: 64px;
-  max-width: 640px; /*restrict the width for more concise viewing*/
-  width: 94%;
-  text-align:justify;
-}
-
-.wrapper h1 {
-  
-  text-align: center;
-}
-
-/**
- * Footer Styles
- */
-
-.footer {
-  position: absolute;
-  display:flex;
-  background-color:hsl(195, 63%, 70%);
-  justify-content: space-around;
-  align-items:center;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  text-align: center;
-}
-
-#header {
- 	justify-content: center;
-	background-color:hsl(195, 63%, 70%);
-	position:fixed;
-	width:100vw;
-	z-index:3; 
-	height:40px;
-	transition: top 0.5s;
-}
-
-.container {
-	display:flex;
-	width:100vw;
-}
-
-.container  > li {
-	display:flex;
-	font-size:1.1rem;
-	display: inline-flex;
-	flex: 1;
-	list-style-type:none;
-	justify-content: center;
-	margin-top: -7px;
-}
-
-.container a {
-	text-decoration:none;
-	color:black;
-}
-	</style>
 </head>
 <body>
 
-	<header id="header"> 	
-		<nav>
-			<ul class="container">
-				<li><a href="">Home</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Contact</a></li>
-				<li><input type="search" placeholder ="Type your search here" id="searchbar"></li>
-			</ul>
-		</nav>
-	</header>
+	<!-- <div class="containerLogo">
+		<a href="flaneur_blog.html"><img src="Logos/le_flaneur_logo_transparent.png" alt="Intrepidflaneur Logo"></a>
+	</div> -->
+		<header id="header"> 	
+			<nav>
+				<div class="container6">
+					<li id="home_button"><a href="flaneur_blog.html">Home</a></li>
+					<li id="about_button"><a href="flaneur_about_page.html">About</a></li>
+					<li><a href="flaneur_blog.html"><img src="Logos/le_flaneur_logo_transparent.png" alt="Intrepidflaneur Logo" id="pageLogo"></a></li>
+					<li id="contact_button"><a href="contact_page.html">Contact</a></li> 
+					<li id="work_with_me"><a href="">Work with me</a></li>
+				</div>
+				<!-- <ul class="container">
+					<li id="home_button"><a href="flaneur_blog.html">Home</a></li>
+					<li id="about_button"><a href="flaneur_about_page.html">About</a></li>
+					<li id="contact_button"><a href="contact_page.html">Contact</a></li> -->
+					<!-- <li><input type="search" placeholder ="Type your search here" id="searchbar"></li> -->
+				<!-- </ul> -->
+			</nav>
+		</header>
+
+		 <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 	<div class="wrapper">
   <h1>CSS “Always on the bottom” Footer</h1>
@@ -115,10 +50,7 @@ body {
 </div>
 
 <footer class="footer">
-	<div> theintrepidflaneur.com <span id = "copyright">&copy;</span> | 2018</div>
-	<div>Terms & conditions</div> 
-	<div>Cookies Policy</div>
-	<div>Purchases Terms & Conditions and Refund</div>
+	<div> intrepidflaneur.com <span id = "copyright">&copy;</span> | 2018</div>
 </footer>
 
 </body>
@@ -131,9 +63,26 @@ body {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("header").style.top = "0";
   } else {
-    document.getElementById("header").style.top = "-50px";
+    document.getElementById("header").style.top = "-65px";
   }
   prevScrollpos = currentScrollPos;
 }
+
+// // When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop >  || document.documentElement.scrollTop > 50) {
+//     document.getElementById("myBtn").style.display = "block";
+//   } else {
+//     document.getElementById("myBtn").style.display = "none";
+//   }
+// }
+
+// // When the user clicks on the button, scroll to the top of the document
+// function topFunction() {
+//   document.body.scrollTop = 0; // For Safari
+//   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
 </script>
 </html>

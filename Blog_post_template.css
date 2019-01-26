@@ -1,0 +1,196 @@
+/*html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+*/
+/*.wrapper {*/
+	
+/*  margin: 0 auto;*/  /*centres the text in the middle of the page*/
+/*  padding-top: 64px;*/
+ /* max-width: 640px;*/ /*restrict the width for more concise viewing*/
+/*  width: 94%;
+  text-align:justify;
+}
+
+.wrapper h1 {
+  
+  text-align: center;
+}
+*/
+/**
+ * Footer Styles
+ */
+
+/*.footer {
+  position: absolute;
+  display:flex;
+  background-color:hsl(195, 63%, 70%);
+  justify-content: space-around;
+  align-items:center;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+}*/
+
+/*#header {
+ 	justify-content: center;
+	background-color:hsl(195, 63%, 70%);
+	position:fixed;
+	width:100vw;
+	z-index:3; 
+	height:40px;
+	transition: top 0.5s;
+}
+
+.container {
+	display:flex;
+	width:100vw;
+}
+
+.container  > li {
+	display:flex;
+	font-size:1.1rem;
+	display: inline-flex;
+	flex: 1;
+	list-style-type:none;
+	justify-content: center;
+	margin-top: -7px;
+}*/
+
+/*.container a {
+	text-decoration:none;
+	color:black;
+}*/
+
+body {
+  position: relative;
+  margin: 0;
+  padding:0;
+  padding-bottom: 6rem;
+  overflow-x:hidden;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+#page_logo img {
+  width:180px;
+  height: 40px;
+  margin-top: 5px;
+  transition: top 1s;
+}
+
+#header {
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+  
+div.container6 {
+  height: 5em;
+  width:100vw;
+  background-color:hsl(195, 63%, 70%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+
+ li {
+    color:black;
+    list-style:none;
+    flex: 1 0 18vw;
+    text-align:center;
+    margin-left: -30px;
+  }
+
+  a {
+    text-decoration:none;
+    color:black;
+  }
+
+#myBtn {
+  
+  /*display: none;*/ /* Hidden by default */
+  position: absolute; /* Fixed/sticky position */
+  bottom: 60px; /* Place the button at the bottom of the page */
+  left: 45%;
+  /*right: 150px;*/ /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 8px 30px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 20px; /* Increase font size */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    max-width: 380px;
+  }
+
+  div.container6 {
+    height:12em;
+    flex-direction: column;
+    /*flex-wrap:wrap;*/
+  }
+
+   li {
+    color:black;
+    list-style:none;
+    flex: 0 1;
+    margin-left:0;
+    text-align:center;
+    margin-top: -20px;
+  }
+
+  li img {
+    width:180px;
+    height: 40px;
+    margin-top: 20px;
+    transition: top 1s;
+    margin-left: -20px;
+}
+
+  
+  .container6 :nth-child(3) {order: 1;}
+  .container6 :nth-child(1) {order: 2;}
+  .container6 :nth-child(2) {order: 3;}
+  .container6 :nth-child(4) {order: 4;}
+  .container6 :nth-child(5) {order: 5;}
+
+  #footer {
+    height: 5em;
+  }
+
+  #myBtn {
+    left:41%;
+  }
+  
+
+
+
+  }
+  }
