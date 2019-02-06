@@ -68,7 +68,7 @@ h1 {
 	width:100vw;
 	z-index:3; 
 	height:50px;
-	transition: top 0.5s;
+	transition: top 0.2s ease-in-out;
 }
 
 .container {

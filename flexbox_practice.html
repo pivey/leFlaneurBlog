@@ -3,73 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-</head>
 
-<style>
-
-body {
-  position: relative;
-  margin: 0;
-  padding:0;
-  padding-bottom: 6rem;
-  min-height: 100%;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-}
-
-#header {
-	display:flex;
-	justify-content: space-between;
-	align-items:center;
-
-}
-	
-
-div.container6 {
-  background-color:hsl(195, 63%, 70%);
- 
-  height: 5em;
+	<style>
+		.container {
+  margin:auto;
+  position: absolute;
+  width: 80vw;
+  background-color: darkslategrey;
+  padding: 1rem;
   display: flex;
-  align-items: center;
-  justify-content: space-around; 
+  flex-direction: row;
+  justify-content: center;
 }
-
-#pageLogo {
-  margin: 0 
-  width:180px;
-  height: 40px;
+.item {
+  flex-shrink: 2;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+  width: 10rem;
+  padding: 2rem 1rem;
+  background: #e2f0ef;
+  border: 3px solid #51aaa3;
+  color: #51aaa3;
+  margin: 6px;
 }
-
- li {
-  	list-style:none;
-  	flex: 0 1 20vw;
-  	text-align:center;
-  	
-  }
-
-
-
-
-
-</style>
+	</style>
+</head>
 <body>
-	
-	<div class="container6">
-		<li>Home</li>
-		<li>About</li>
-		<li><a href="flaneur_blog.html"><img src="Logos/le_flaneur_logo_transparent.png" alt="Intrepidflaneur Logo" id="pageLogo"></a></li>
-		<li>Contact</li>
-		<li>Work with me</li>
+
+	<div class="container">
+	    <div class="item item-1">1</div>
+	    <div class="item item-2">2</div>
+	    <div class="item item-3">3</div>
 	</div>
-	<!-- <div id="header">
-		<div>
-			<ul class="menu">
-				<li>Home</li>
-				<li>About</li>
-				<li>Contact</li>
-				<li>Shop</li>
-			</ul>
-		</div>
-	<div id="pageLogo"><a href="flaneur_blog.html"><img src="Logos/le_flaneur_logo_transparent.png" alt="Intrepidflaneur Logo"></a></div></div>
-	</div> -->
+	
 </body>
+
+
 </html>

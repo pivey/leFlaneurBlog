@@ -9,56 +9,302 @@
 			<html lang="en"> 
        	 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<title>Le Flaneur About Page</title>
-			<!-- <link rel="stylesheet" href="flaneur_blog.css"> -->
-			<link rel="stylesheet" href="flaneur_about_page.css">
+			<link rel="stylesheet" href="flaneur_blog.css">
+			<!-- <link rel="stylesheet" href="flaneur_about_page.css"> -->
 			<link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Mukta|Nobile" rel="stylesheet">
 			
+		<style>
+			
+	/****************** About Page ***********************/
+/*
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-top:0;
+  overflow-x:hidden;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;  //centres the text in the middle of the page
+  padding-top: 44px;
+  max-width: 620px; //restrict the width for more concise viewing
+  width: 94%;
+  text-align:justify;
+  line-height:1.5rem;
+}
+
+.wrapper h1 {
+  text-align: center;
+}
+
+
+ // Footer Styles
+ 
+
+.footer {
+  position: absolute;
+  display:flex;
+  background-color:hsl(195, 63%, 70%);
+  justify-content: center;
+  align-items:center;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: center;
+  width:100vw;
+}
+
+#header {
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+  
+div.container6 {
+  height: 5em;
+  width:100vw;
+  background-color:hsl(195, 63%, 70%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+
+#pageLogo {
+  margin: 0 
+  width:180px;
+  height: 40px;
+}
+
+ li {
+    color:black;
+    list-style:none;
+    flex: 1 0 20vw;
+    text-align:center;
+  }
+
+  a {
+    text-decoration:none;
+    color:black;
+  }
+
+//********************* Flex container 
+.container {
+  width: 100vw;
+  height: auto;
+  background-color: #ffffff;
+ 
+  display: flex;
+  flex-direction: column;
+}
+.item {
+  flex-shrink: 1;
+  text-align: center;
+  width: auto;
+  background: #ffffff;
+  width: 100vw;
+  height:450px;
+  margin:0;
+  padding:0;
+}
+
+.item-2 h1 {
+	margin-bottom: 50px;
+	margin-top: 60px;
+	text-align: center;
+	line-height:2.7rem;
+	color:black;
+	font-family: 'Nobile', sans-serif;
+}
+
+#headshot {
+	width: 350px;
+	height:360px;
+	margin-top:75px;
+	padding:0;
+	border-radius: 100%;
+}
+
+#description{	
+	display:flex;
+	justify-content: center;
+	background-color:#ffffff;
+	font-family: 'Mukta', sans-serif;
+	flex-grow:1;
+}
+
+
+#programBar {
+	position: absolute;
+	width:500px;
+	left: 47.5%;
+	top: 70%;
+	margin-top: 30px;
+	justify-content: space-around;
+}
+
+.programIcon {
+	height: 80px;
+	width: 80px;
+	margin-bottom: 10px;
+}
+
+#jsIcon:hover{
+	height: 100px;
+	width: 100px;
+	margin-left: -5px;
+	margin-top: -5px;
+}
+
+#phpIcon:hover{
+	height: 100px;
+	width: 100px;
+	margin-left: -5px;
+	margin-top: -5px;
+}
+
+#cssIcon:hover{
+	height: 100px;
+	width: 100px;
+	margin-left: -5px;
+	margin-top: -5px;
+}
+
+#htmlIcon:hover{
+	height: 100px;
+	width: 100px;
+	margin-left: -5px;
+	margin-top: -5px;
+}
+
+//*************** Top Scroll Button 
+
+
+#myBtn_About_Page {
+  //position: absolute;// // Fixed/sticky position //
+  //bottom: 80px;// // Place the button at the bottom of the page //
+  //left: 45%;//
+  //right: 150px;// // Place the button 30px from the right //
+  //z-index: 99;// // Make sure it does not overlap //
+  border: none; // Remove borders //
+  outline: none; // Remove outline //
+  background-color: red; // Set a background color //
+  color: white; // Text color //
+  cursor: pointer; // Add a mouse pointer on hover //
+  padding: 4px 30px; // Some padding //
+  border-radius: 35px; // Rounded corners //
+  font-size: 20px; // Increase font size //
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin-left: 50px;
+}
+
+#myBtn_About_Page:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*************** Media queries **********************/
+
+/*@media screen and (max-width: 640px) {
+	#header {
+		display:flex;
+		justify-content: center;
+	}
+
+	#header .container{
+		display : inline-flex;
+		margin:0;
+		padding:0;
+		margin-top: 65px;
+		
+	}
+
+	.wrapper {
+		padding-top:20px;
+		max-width: 520px;
+	}
+
+	.wrapper h1 {
+ 		 line-height:2.5rem;
+ 		 padding-bottom:10px;
+}
+
+	.container  > li {
+		display: flex;
+		font-size: 1.3rem;
+		flex: 2;
+		list-style-type:none;
+		
+}
+
+	#myBtn {
+    	left:41%;
+  }
+
+}*/
+
+
+
+
+
+
+		</style>
+
 		</head>
 			<main>
-				<div class="flex">
-					<div id="pageLogo"><a href="flaneur_blog.html"><img src="Logos/le_flaneur_logo_transparent.png" alt="Intrepidflaneur Logo"></a></div> 
-						<header id="header"> 	
-							<nav>
-								<ul class="container">
-									<li id="home_button"><a href="flaneur_blog.html">Home</a></li>
-									<li id="about_button"><a href="flaneur_about_page.html">About</a></li>
-									<li id="contact_button"><a href="contact_page.html">Contact</a></li>
-									<!-- <li><input type="search" placeholder ="Type your search here" id="searchbar"></li> -->
-								</ul>
-							</nav>
-						</header>
+				
+			<header id="header"> 	
+				<nav>
+					<div class="container6">
+						<li id="home_button"><a href="flaneur_blog.html">Home</a></li>
+						<li id="about_button"><a href="flaneur_about_page.html">About</a></li>
+						<li><a href="flaneur_blog.html"><img src="Logos/le_flaneur_logo_transparent.png" alt="Intrepidflaneur Logo" id="pageLogo"></a></li>
+						<li id="contact_button"><a href="contact_page.html">Contact</a></li> 
+						<li id="work_with_me"><a href="">Work with me</a></li>
+					</div>
+				</nav>
+			</header>					
 
-						<div><img src="Images/headshot.png" alt="Headshot" id="headshot"></div>
-						<div id="description"><span class="wrapper"><h1>Hi, Welcome to my blog <br> Take a look at what I get up to around CPH <br><br>I am a self-taught frontend web developer <br>I live in Copenhagen <br> I'm looking to pursue a career <br>as a fullstack developer</h1></div></span>
+			<div class="container">
+			    <div class="item item-1"><img src="Images/headshot2.png" alt="Headshot" id="headshot"></div>
+			    <div class="item item-2" id="description" class="descripWrapper"><h1>Hi I'm Peter! <br> Welcome to my blog <br> Take a look at what I get up to around CPH <br><br>I am a self-taught frontend web developer & photographer<br>I live in Copenhagen <br> I'm looking to pursue a career <br>as a fullstack developer and web designer</h1></div>
+			    
+			</div>
 
-						<div id="programBar" class = "flex">
-								<div><img src="logos/js_icon.png" alt="JS icon" class="programIcon" id="jsIcon"><a href=""></a></img></div>
-								
-								<div><img src="logos/php_icon.png" alt="PHP icon"  class="programIcon" id="phpIcon"><a href=""></a></img></div>
-								
-								<div><img src="logos/css_icon.png" alt="CSS3 icon"  class="programIcon" id="cssIcon"><a href=""></a></img></div>
-								
-								<div><img src="logos/html_icon.png" alt="HTML5 icon"  class="programIcon" id="htmlIcon"><a href=""></a></img></div>
-																
+					
+						<!-- <div id="programBar">
+							<div><img src="logos/js_icon.png" alt="JS icon" class="programIcon" id="jsIcon"><a href=""></a></img></div>
 							
-							</div>
-
-						
-
-					
-					
-				</div>
+							<div><img src="logos/php_icon.png" alt="PHP icon"  class="programIcon" id="phpIcon"><a href=""></a></img></div>
+							
+							<div><img src="logos/css_icon.png" alt="CSS3 icon"  class="programIcon" id="cssIcon"><a href=""></a></img></div>
+							
+							<div><img src="logos/html_icon.png" alt="HTML5 icon"  class="programIcon" id="htmlIcon"><a href=""></a></img></div>
+															
+						</div> -->
+				
 			</main>
 
 			 <footer class="footer">
-				<div> theintrepidflaneur.com <span id = "copyright">&copy;</span> | 2018</div>
-				<div>Terms & conditions</div> 
-				<div>Cookies Policy</div>
-				<div>Purchases Terms & Conditions and Refund</div>
+				<div> intrepidflaneur.com <span id = "copyright">&copy;</span> | 2018</div>
+				<button onclick="topFunction()" id="myBtn_About_Page" title="Go to top">Top</button>
 			</footer>
 
 			</main>	
-				<script src="flaneur_blog.js"></script>
+			<script src="flaneur_blog.js"></script>
 		</body>
 	</html>

@@ -26,13 +26,12 @@ body {
   text-align:justify;
 }
 
-.wrapper h1 {
+.descripWrapper h1 {
   
   text-align: center;
   margin-top: 170px;
   line-height:2.7rem;
   color:#f4f4f4;
- /* font-family: 'Mukta', sans-serif;*/
   font-family: 'Nobile', sans-serif;
 }
 
@@ -53,14 +52,17 @@ body {
   text-align: center;
 }
 
+/**
+ * Header Styles
+ */
+
 #header {
- 	/*justify-content: center;*/
 	background-color:hsl(195, 63%, 70%);
 	position:fixed;
 	width:100vw;
 	z-index:3; 
 	height:50px;
-	transition: top 0.5s;
+	transition: top 0.2s ease-in-out;
 }
 
 .container {
@@ -71,12 +73,11 @@ body {
 .container  > li {
 	display:flex;
 	font-size:1.1rem;
-	/*display: inline-flex;*/
 	flex: 1;
 	list-style-type:none;
 	justify-content: center;
 	margin-top: -2px;
-}
+}*/
 
 #header {
  	justify-content: center;
@@ -131,11 +132,46 @@ body {
 	z-index:4;
 	background-size:contain;
 	transition: top 1s;
-	
 }
 
-/*extra styling for the about page
-*/
+
+/*#page_logo img {
+  width:180px;
+  height: 40px;
+  margin-top: 5px;
+  transition: top 1s;
+}
+
+#header {
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+  
+div.container6 {
+  height: 5em;
+  width:100vw;
+  background-color:hsl(195, 63%, 70%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+
+ li {
+    color:black;
+    list-style:none;
+    flex: 1 0 18vw;
+    text-align:center;
+    margin-left: -30px;
+  }
+
+  a {
+    text-decoration:none;
+    color:black;
+  }
+
+/*extra styling for the about page*/
+
 
 .flex{
 	display:flex;
@@ -202,3 +238,68 @@ body {
 	margin-left: -5px;
 	margin-top: -5px;
 }
+
+#myBtn {
+  position: absolute; /* Fixed/sticky position */
+  bottom: 60px; /* Place the button at the bottom of the page */
+  left: 45%;
+  /*right: 150px;*/ /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 4px 30px; /* Some padding */
+  border-radius: 35px; /* Rounded corners */
+  font-size: 20px; /* Increase font size */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    max-width: 380px;
+  }
+
+  div.container6 {
+    height:12em;
+    flex-direction: column;
+    /*flex-wrap:wrap;*/
+  }
+
+   li {
+    color:black;
+    list-style:none;
+    flex: 0 1;
+    margin-left:0;
+    text-align:center;
+    margin-top: -20px;
+  }
+
+  li img {
+    width:180px;
+    height: 40px;
+    margin-top: 20px;
+    transition: top 1s;
+    margin-left: -20px;
+}
+
+  
+  .container6 :nth-child(3) {order: 1;}
+  .container6 :nth-child(1) {order: 2;}
+  .container6 :nth-child(2) {order: 3;}
+  .container6 :nth-child(4) {order: 4;}
+  .container6 :nth-child(5) {order: 5;}
+
+  #footer {
+    height: 5em;
+  }
+
+  #myBtn {
+    left:41%;
+  }

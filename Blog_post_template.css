@@ -73,32 +73,26 @@ body {
 	margin-top: -7px;
 }*/
 
-/*.container a {
+.container a {
 	text-decoration:none;
 	color:black;
-}*/
+}
 
 body {
   position: relative;
   margin: 0;
-  padding:0;
+  padding: 0;
   padding-bottom: 6rem;
   overflow-x:hidden;
   min-height: 100%;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-#page_logo img {
-  width:180px;
-  height: 40px;
-  margin-top: 5px;
-  transition: top 1s;
-}
-
 #header {
   display:flex;
   justify-content: space-around;
   align-items:center;
+  transition: top 0.2s ease-in-out;
 }
   
 div.container6 {
@@ -123,30 +117,162 @@ div.container6 {
     color:black;
   }
 
-#myBtn {
-  
-  /*display: none;*/ /* Hidden by default */
-  position: absolute; /* Fixed/sticky position */
-  bottom: 60px; /* Place the button at the bottom of the page */
-  left: 45%;
+
+#myBtn_About_Page {
+  /*position: absolute;*/ /* Fixed/sticky position */
+  /*bottom: 80px;*/ /* Place the button at the bottom of the page */
+  /*left: 45%;*/
   /*right: 150px;*/ /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
+  /*z-index: 99;*/ /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: red; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 8px 30px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
+  padding: 4px 30px; /* Some padding */
+  border-radius: 35px; /* Rounded corners */
   font-size: 20px; /* Increase font size */
   font-family: "Helvetica Neue", Arial, sans-serif;
+  margin-left: 30px;
 }
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+  
+  #pageLogo {
+    height: 30px;
+  }
+
+  div.container6 {
+    height: 8em;
+    flex-wrap:wrap;
+  }
+
+  li {
+    flex: 0 1 30vw;
+    text-align:center;
+    margin-top: -30px;
+  }
+
+  li:nth-child(1) {
+  flex: 0 1 50vw; 
+  } 
+
+
+  li:nth-child(2) {
+  flex: 0 1 50vw;
+    }
+
+  li:nth-child(3) {
+  flex: 0 1 100vw;
+  margin-top: 0px }
+
+  li:nth-child(4) {
+  flex: 0 1 50vw;
+    }
+
+  li:nth-child(5) {
+  flex: 0 1 50vw;
+    }
+
+ .container6 :nth-child(3) {order: 1;}
+ .container6 :nth-child(1) {order: 2;}
+ .container6 :nth-child(2) {order: 3;}
+ .container6 :nth-child(4) {order: 4;}
+ .container6 :nth-child(5) {order: 5;}
+
+@media screen and (max-width: 640px) {
+  #header {
+    display:flex;
+    justify-content: center;
+  }
+
+  #headshot {
+    width: 300px;
+    height:310px;
+    margin-top:55px;
+  }
+
+  div.container6 {
+    height: 8em;
+    flex-wrap:wrap;
+  }
+
+  #header .container{
+    display : inline-flex;
+    margin:0;
+    padding:0;
+    margin-top: 65px;
+  }
+
+  .wrapper {
+    padding-top:20px;
+    max-width: 500px;
+  }
+
+  .wrapper h1 {
+     line-height:2.5rem;
+     padding-bottom:10px;
+}
+
+  .container  > li {
+    display: flex;
+    font-size: 1.3rem;
+    flex: 2;
+    list-style-type:none;
+    
+}
+
+  #myBtn {
+      left:41%;
+  }
+
+
+.item-2 h1 {
+  margin: 0 auto;  
+    max-width: 430px; 
+  margin-top: 30px;
+  line-height:2rem;
+  font-size:1.5rem;
+}
+
+
+
+
+  @media screen and (max-width: 550px) {
+  
+  .item-2 h1 {
+  margin-top: 30px;
+  line-height:2.2rem;
+  font-size:1.3rem;
+}
+ .wrapper {
+    max-width: 360px;
+  }
+
+#headshot {
+    width: 300px;
+    height:310px;
+    margin-top:75px;
+  }
+
+  @media screen and (max-width: 400px) {
+   
+  
+  .item-2 h1 {  
+    max-width: 320px;
+  }
+
+
+
+        }
+      }
+    }
+
+/*@media screen and (max-width: 500px) {
   .wrapper {
     max-width: 380px;
   }
@@ -154,7 +280,7 @@ div.container6 {
   div.container6 {
     height:12em;
     flex-direction: column;
-    /*flex-wrap:wrap;*/
+    flex-wrap:wrap;
   }
 
    li {
@@ -164,18 +290,18 @@ div.container6 {
     margin-left:0;
     text-align:center;
     margin-top: -20px;
-  }
+  }*/
 
-  li img {
+/*  li img {
     width:180px;
     height: 40px;
     margin-top: 20px;
     transition: top 1s;
     margin-left: -20px;
-}
+}*/
 
   
-  .container6 :nth-child(3) {order: 1;}
+  /*.container6 :nth-child(3) {order: 1;}
   .container6 :nth-child(1) {order: 2;}
   .container6 :nth-child(2) {order: 3;}
   .container6 :nth-child(4) {order: 4;}
@@ -187,10 +313,11 @@ div.container6 {
 
   #myBtn {
     left:41%;
-  }
+  }*/
   
 
 
 
-  }
-  }
+  /*}
+  }*/
+
