@@ -5,72 +5,75 @@
 
 
 		<head>
-			<title>Le Flaneur About Page</title>
+			<title>Contact</title>
 			<meta charset="UTF-8">
 			<html lang="en"> 
         	<meta name="viewport" content="width=device-width, initial-scale=1.0">
         	<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC" rel="stylesheet">
-        	<link rel="stylesheet" href="flaneur_contact_page.css">
-        	<!-- <link rel="stylesheet" href="flaneur_blog.css"> -->  
+        	<!-- <link rel="stylesheet" href="flaneur_contact_page.css"> -->
+        	<link rel="stylesheet" href="flaneur_blog.css">  
+        	<script src ="jquery-3.3.1.min"></script>
+        	<script src="parallax.min.js"></script>
 
 		</head>
 			<main>
 				<div class="flex">
-					<div id="pageLogo"><a href="flaneur_blog.html"><img src="Logos/le_flaneur_logo_transparent.png" alt="Intrepidflaneur Logo"></a></div> 
-					
+
+					<div class="MainContainer">
+
 						<header id="header"> 	
 							<nav>
-								<ul class="container">
+								<div class="container6">
 									<li id="home_button"><a href="flaneur_blog.html">Home</a></li>
 									<li id="about_button"><a href="flaneur_about_page.html">About</a></li>
-									<li id="contact_button"><a href="contact_page.html">Contact</a></li>
-									<!-- <li><input type="search" placeholder ="Type your search here" id="searchbar"></li> -->
-								</ul>
+									<li><a href="flaneur_blog.html"><img src="Logos/le_flaneur_logo_transparent.png" alt="Intrepidflaneur Logo" id="pageLogo"></a></li>
+									<li id="contact_button"><a href="contact_page.html">Contact</a></li> 
+									<li id="work_with_me"><a href="">Work with me</a></li>
+								</div>
 							</nav>
-						</header>
+						</header>	
 
-						<div><img src="Images/contact_page_image.jpg" alt="contactpage_image" id="contactpage_image"></div>
-						<div id="description"><div class="textWrapper"><h1>Thank you!  <br> for taking some time to look around <br><br>if you feel anything could be improved <br>or you would like to contact me about any possible work <br><br> photography or webdesign, please use the form below or contact me via social media.</h1></div>
-						</div>	
+				  <div class="ParallaxContainer">
+				    <h1>
+				      Get in touch!
+				    </h1>
+				  </div>
+
+				  <div class="ContentContainer">
+				    <div class="Content">
+					 </div>
+
+							<form action="my-handling-form-page" method="post">      
+							  <input for="name" name="name" type="text" class="feedback-input" placeholder="Name" />   
+							  <input for="Email" name="email" type="text" class="feedback-input" placeholder="Email" />
+							  <textarea for="query" name="text" class="feedback-input" placeholder="Query"></textarea>
+							  <input type="submit" value="SUBMIT"/>
+							</form>
+
+								        			   
+				     </div>
+				  </div>
+				
+
+							<!-- <img src="Images/contact_page_banner.jpg" alt="contactpage_image" id="contactpage_banner"> -->
+						<!-- <div id="description"><div class="textWrapper"><h1>Thank you!  <br> for taking some time to look around <br><br>if you feel anything could be improved <br>or you would like to contact me about any possible work <br><br> photography or webdesign, please use the form below or contact me via social media.</h1></div>
+						</div>	 -->
 
 
-					
-				</div>
-
-				<div><img src="Images/contact_page_image_2.jpg" alt="contactpage_image" id="contactpage_image_2"></div>
-
-            <div id="formBox">
-            <h1 id="feedbackTitle">Feedback Form</h1>
-              <form method="post" action="send_mail.php">
-            <p>
-            <label>First Name:</label> 
-              <input id="firstNameBox" type="text" name="first_name" required>          
-            </p>
-            <p>
-            <label>Email:</label>
-              <input id= "emailBox" type="email" name="email_address">
-            </p>
-            <p>
-            <div id="comments" ><label>Comments:</label></div>
-              <div id="commentBox"><textarea name="comments" maxlength="500"></textarea></div>
-            </p>
-            <p><button>Submit the form</button></p>
-            </form>
-			</div>
-        
-       
+				<!-- <div><img src="Images/contact_page_image_2.jpg" alt="contactpage_image" id="contactpage_image_2"></div> -->
 
 
 			</main>
 
 			 <footer class="footer">
-				<div> theintrepidflaneur.com <span id = "copyright">&copy;</span> | 2018</div>
-				<div>Terms & conditions</div> 
-				<div>Cookies Policy</div>
-				<div>Purchases Terms & Conditions and Refund</div>
+				<div> intrepidflaneur.com <span id = "copyright">&copy;</span> | 2018</div>
+				<button onclick="topFunction()" id="myBtn_About_Page" title="Go to top">Top</button>
 			</footer>
+				
 
 			</main>	
-				<script src="flaneur_blog.js"></script>
+				<script src="flaneur_blog.js">
+					$('.parallax-window').parallax({imageSrc: 'Images/contact_banner.jpg'});
+				</script>
 		</body>
 	</html>
