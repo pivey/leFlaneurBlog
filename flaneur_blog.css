@@ -17,7 +17,7 @@ body {
   margin: 0;
   padding-top:0;
   overflow-x:hidden;
-  padding-bottom: 6rem;
+  padding-bottom: 8rem;
   min-height: 100%;
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
@@ -33,6 +33,7 @@ body {
 
 .wrapper h1 {
   text-align: center;
+  padding-bottom:15px;
 }
 
 /**
@@ -61,59 +62,32 @@ margin-left: -20px; }
 /************************************************************
 			/*page content beyond header and footer*/
 
-
-/*#pageLogo img {
-	width:180px;
-	height: 30px;
-	margin-top: -6px;
-	position:relative;
-	z-index:4;
-	background-size:contain;
-	transition: top 1s;
-}*/
-
-/*.grid {
-	min-height:100%;
-	display:grid;
-	grid-template-columns:(12, 1fr);
-	grid-template-rows:60px 60px repeat(4,1fr) 1fr;
-}*/
-
-/*.grid > div{
-	display:flex;
-	align-items:center;
-}*/
-
 .article_1_Grid {
-	flex-wrap: wrap;
+	
 	padding:20px;
-	display:flex;
 	margin-top: 50px;
-	/*grid-column:3/-3;*/
-	/*grid-row:3/4;*/
 	color:white;
-	justify-content: space-around;
 	align-items: center;
 }
 
 .flexItem_1 {
 	display:flex;
-	align-items: flex-start;
+	flex-wrap: wrap;
+	align-items: space-around;
 	justify-content: center;
 }
 
 .cphViewsText {
 	background-color: none;
 	color:white;
-	display:flex;
 	justify-content: flex-start;
 	font-size: 40px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	line-height: 2.5rem;
 	background-color: hsl(242, 59%, 57%);
-	width: 360px;
 	height: 160px;
+	width: 360px;
 	padding-top:20px;
 	padding-left: 10px;
 	margin-top:0px;
@@ -121,10 +95,8 @@ margin-left: -20px; }
 
 .cphViewsText:hover {
 	text-decoration: underline;
-	color:black;
+	color:yellow;
 }
-
-
 
 .cphViews img {
 	height: 200px;
@@ -132,14 +104,12 @@ margin-left: -20px; }
 	background-size:contain;
 }
 
-
 .cphViews {
 	display:flex;
 	opacity: 1;
 	transition: .7s;
 	z-index:1;
 }
-
 
 .cphViews:hover {
   opacity: 0.5;
@@ -167,13 +137,10 @@ margin-left: -20px; }
   margin-left:60px;
  }
 
-
 .article_2_Grid {
 	flex-wrap: wrap;
 	padding:20px;
 	display:flex;
-	/*grid-column:3/-3;*/
-	/*grid-row:4/5;*/
 	color:white;
 	justify-content: space-around;
 	align-items: center;
@@ -181,8 +148,11 @@ margin-left: -20px; }
 
 .flexItem_2 {
 	display:flex;
+	flex-wrap: wrap;
+	align-items: space-around;
 	align-items: flex-start;
 	justify-content: center;
+
 }
 
 .bestBahnMi_text {
@@ -193,8 +163,8 @@ margin-left: -20px; }
 	text-overflow: ellipsis;
 	line-height: 2.5rem;
 	background-color: hsl(4, 76%, 47%);
-	width: 360px;
 	height: 160px;
+	width: 360px;
 	padding-top:20px;
 	padding-left: 10px;
 	margin-top:0px;
@@ -203,7 +173,7 @@ margin-left: -20px; }
 
 .bestBahnMi_text:hover {
 	text-decoration: underline;
-	color:black;
+	color:yellow;
 }
 
 .bahnMi img {
@@ -211,7 +181,6 @@ margin-left: -20px; }
 	width: 400px;
 	background-size:contain;
 }
-
 
 .bahnMi {
 	display:flex;
@@ -252,8 +221,6 @@ margin-left: -20px; }
 	flex-wrap: wrap;
 	padding:20px;
 	display:flex;
-	/*grid-column:3/-3;*/
-	/*grid-row:5/6;*/
 	color:white;
 	justify-content: space-around;
 	align-items: center;
@@ -261,6 +228,8 @@ margin-left: -20px; }
 
 .flexItem_3 {
 	display:flex;
+	flex-wrap: wrap;
+	align-items: space-around;
 	align-items: flex-start;
 	justify-content: center;
 }
@@ -273,8 +242,8 @@ margin-left: -20px; }
 	text-overflow: ellipsis;
 	line-height: 2.5rem;
 	background-color: hsl(198, 81%, 57%);
-	width: 360px;
 	height: 160px;
+	width: 360px;
 	padding-top:20px;
 	padding-left: 10px;
 	margin-top:0px;
@@ -283,7 +252,7 @@ margin-left: -20px; }
 
 .streetTour_text:hover {
 	text-decoration: underline;
-	color:black;
+	color:yellow;
 }
 
 .elmegade img {
@@ -299,7 +268,6 @@ margin-left: -20px; }
 	transition: .7s;
 	z-index:1;
 }
-
 
 .elmegade:hover {
   opacity: 0.5;
@@ -333,8 +301,6 @@ margin-left: -20px; }
 	flex-wrap: wrap;
 	padding:20px;
 	display:flex;
-	/*grid-column:3/-3;*/
-	/*grid-row:6/7;*/
 	color:white;
 	justify-content: space-around;
 	align-items: center;
@@ -342,6 +308,8 @@ margin-left: -20px; }
 
 .flexItem_4 {
 	display:flex;
+	flex-wrap: wrap;
+	align-items: space-around;
 	align-items: flex-start;
 	justify-content: center;
 }
@@ -354,8 +322,8 @@ margin-left: -20px; }
 	text-overflow: ellipsis;
 	line-height: 2.5rem;
 	background-color: hsl(80, 74%, 45%);
-	width: 360px;
 	height: 160px;
+	width: 360px;
 	padding-top:20px;
 	padding-left: 10px;
 	margin-top:0px;
@@ -364,16 +332,14 @@ margin-left: -20px; }
 
 .bestParks_text:hover {
 	text-decoration: underline;
-	color:black;
+	color:yellow;
 }
-
 
 .parks img {
 	height: 200px;
 	width: 400px;
 	background-size:contain;
 }
-
 
 .parks {
 	display:flex;
@@ -414,8 +380,6 @@ margin-left: -20px; }
 	flex-wrap: wrap;
 	padding:20px;
 	display:flex;
-	/*grid-column:3/-3;*/
-	/*grid-row:7/8;*/
 	color:white;
 	justify-content: space-around;
 	align-items: center;
@@ -423,6 +387,8 @@ margin-left: -20px; }
 
 .flexItem_5 {
 	display:flex;
+	flex-wrap: wrap;
+	align-items: space-around;
 	align-items: flex-start;
 	justify-content: center;
 }
@@ -435,8 +401,8 @@ margin-left: -20px; }
 	text-overflow: ellipsis;
 	line-height: 2.5rem;
 	background-color: hsl(35, 70%, 50%);
+	height: 160px;
 	width: 360px;
-	height: 180px;
 	padding-top:20px;
 	padding-left: 10px;
 	margin-top:0px;
@@ -445,16 +411,14 @@ margin-left: -20px; }
 
 .bestBakeries_text:hover {
 	text-decoration: underline;
-	color:black;
+	color:yellow;
 }
 
 .bakeries img {
-
 	height: 200px;
 	width: 400px;
 	background-size:contain;
 }
-
 
 .bakeries {
 	display:flex;
@@ -462,7 +426,6 @@ margin-left: -20px; }
 	transition: .7s;
 	z-index:1;
 }
-
 
 .bakeries:hover {
   opacity: 0.5;
@@ -477,7 +440,7 @@ margin-left: -20px; }
   transition: .7s ;
   position: absolute;
   height:20px;
-  background-color:hsl(35, 70%, 50%);
+  background-color: hsl(35, 70%, 50%);
   color: white;
   z-index: 0;
 }
@@ -489,22 +452,25 @@ margin-left: -20px; }
   font-weight: bold;
   white-space: nowrap;
   padding: 8px 16px;
-  margin-left:60px;
+  width:130px;
+  margin-left: 60px;
  }
 
 /*********************************************** Extra styling for the about page ********************************************/
 
-
 #socialMediaBar {
+	flex direction:column;
 	position: fixed;
-	left: 8%;
-	top: 25%;
+	left:18%;
+	top:18%;
+	justify-content: center;
 }
 
 .socialMediaIcon {
-	height: 50px;
-	width: 50px;
-	margin-bottom: 10px;
+	height: 45px;
+	width: 45px;
+	margin-top: 10px;
+	margin-right: 25px;
 }
 
 #facebookIcon:hover{
@@ -541,7 +507,6 @@ margin-left: -20px; }
 	margin-left: -5px;
 	margin-top: -5px;
 }
-
 
 /**
  * **************************************** Header Styles ********************************************** 
@@ -596,6 +561,7 @@ div.container6 {
   display: flex;
   flex-direction: column;
 }
+
 .item {
   flex-shrink: 1;
   text-align: center;
@@ -698,64 +664,63 @@ div.container6 {
 
 /************************************************ Media queries **************************************************************/
 
-@media screen and (max-width: 1200px) {
-
- #socialMediaBar {
+@media screen and (max-width: 1500px) {
+	
+#socialMediaBar {
 	display:inline-flex;
 	position: absolute;
-	left: 37%;
-	top: 92%;
+	top: 91.5%;
+	width:30vw;
+	justify-content: center;
+	left: 36%;
 }
-
 .socialMediaIcon {
 	height: 40px;
 	width: 40px;
-	margin-right: 15px;
+	margin-top: 0px;
+	margin-right: 25px;
 }
-
 
 @media screen and (max-width: 800px) {
 	
 	body {
-  position: relative;
-  margin: 0;
-  padding-top:0;
-  overflow-x:hidden;
   padding-bottom: 10rem;
-  min-height: 100%;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  
 }
+
+.middle, .middle_2 {
+	margin-top: 235px;
+	margin-left: -330px;
+	/*margin-left: -85px;}*/}
+
+.middle_3, .middle_4, .middle_5 {
+	margin-top: 234px;
+	margin-left: -270px;
+	/*margin-left: -85px;*/}
+
+.cphViewsText, .bestBahnMi_text, .streetTour_text, .bestParks_text, .bestBakeries_text {
+	height: 200px;
+	width: 400px;}
+
+.elmegade_hover_text, .bestParks_hover_text, .bestBakeries_hover_text {
+	
+	margin-left:-65px;
+	margin-right: -70px; }
 
 	.item-2 h1 {
 	margin-top: 30px;
 	line-height:2.2rem;
-	font-size:1.5rem;
-}
+	font-size:1.5rem;}
 
-.article_1_Grid {
-	flex-wrap: wrap;
-	padding:20px;
-	display:flex;
-	margin-top: 80px;
-	/*grid-column:3/-3;*/
-	/*grid-row:3/4;*/
-	color:white;
-	justify-content: space-around;
-	align-items: center;
-}
-
- #socialMediaBar {
+	
+	 #socialMediaBar {
 	display:inline-flex;
 	position: absolute;
-	left: 30%;
-	top: 90%;
-}
+	top: 94.5%;
+	width:30vw;
+	justify-content: center;
+	left: 36%;}
 
-.socialMediaIcon {
-	height: 40px;
-	width: 40px;
-	margin-right: 15px;
-}
 
 @media screen and (max-width: 700px) {
 
@@ -765,19 +730,6 @@ div.container6 {
 	  margin-top: 5px;
 	  transition: top 1s;
  }
-
- #socialMediaBar {
-	display:inline-flex;
-	position: absolute;
-	left: 30%;
-	top: 90%;
-}
-
-.socialMediaIcon {
-	height: 40px;
-	width: 40px;
-	margin-right: 15px;
-}
 
 	div.container6 {
 	  height: 8em;
@@ -817,18 +769,17 @@ div.container6 {
  .container6 :nth-child(4) {order: 4;}
  .container6 :nth-child(5) {order: 5;}
 
+
+	#socialMediaBar {
+	
+	top: 94.5%;
+	}
+
 @media screen and (max-width: 640px) {
 	#header {
 		display:flex;
 		justify-content: center;
 	}
-
-		 #socialMediaBar {
-	display:inline-flex;
-	position: absolute;
-	left: 25%;
-	top: 90%;
-}
 
 	#headshot {
 		width: 300px;
@@ -872,14 +823,18 @@ div.container6 {
 		  }
 
 
-.item-2 h1 {
-	margin: 0 auto;  
-    max-width: 430px; 
-	margin-top: 30px;
-	line-height:2rem;
-	font-size:1.5rem;
+	.item-2 h1 {
+		margin: 0 auto;  
+   		max-width: 430px; 
+		margin-top: 30px;
+		line-height:2rem;
+		font-size:1.5rem;
 }
 
+	#socialMediaBar {
+	
+	top: 94.5%;
+	}
 
   @media screen and (max-width: 550px) {
 	
@@ -889,12 +844,12 @@ div.container6 {
 	font-size:1.3rem;
 	}
 
-	 #socialMediaBar {
-	display:inline-flex;
-	position: absolute;
-	left: 20%;
-	top: 90%;
-}
+
+	#socialMediaBar {
+	
+	top: 94.5%;
+	}
+
 
 	.wrapper {
 		max-width: 450px;
@@ -904,7 +859,6 @@ div.container6 {
 	.wrapper h1 {
  		 max-width: 450px;
  		 line-height:2.5rem;
- 		
 	}
 
 	#headshot {
@@ -914,29 +868,47 @@ div.container6 {
 	}
 
 	@media screen and (max-width: 450px) {
+
+	.cphViewsText, .bestBahnMi_text, .streetTour_text, .bestParks_text, .bestBakeries_text, .cphViews img, .bahnMi img, .elmegade img, .parks img, .bakeries img {
+	height: 150px;
+	width: 300px;	
+	font-size:2rem;}
+
+	.middle, .middle_2 {
+	margin-top: 177px;
+	margin-left: -232px;}
+
+	.middle_3, .middle_4, .middle_5 {
+	margin-top: 177px;
+	margin-left: -170px;}
+
+	#socialMediaBar {
+	top: 93.5%;	
+	left: 37.5%;}
+
+	.socialMediaIcon {
+	height: 35px;
+	width: 35px;
+	margin-right: 20px;}
+
 	.item-2 h1 {  
-    max-width: 320px;
-	}
+    max-width: 320px;}
 
 	.wrapper {
 		max-width: 350px;
-		line-height:1.5rem;
-	}
+		line-height:1.5rem;}
 
 	.wrapper h1 {
  		 max-width: 500px;
- 		 line-height:2.5rem;
-	}
-
-
-
+ 		 line-height:2.5rem;}
+	
+						}
+					}
 				}
-
 			}
 		}
-  	}
- }
-
+	}
+}
 
 
 
