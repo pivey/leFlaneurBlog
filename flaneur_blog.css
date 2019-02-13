@@ -34,6 +34,7 @@ body {
 .wrapper h1 {
   text-align: center;
   padding-bottom:15px;
+  text-decoration: underline;
 }
 
 /**
@@ -643,7 +644,14 @@ div.container6 {
 	width: 100px;
 	margin-left: -5px;
 	margin-top: -5px;
+} 
+/*********************** Best Views template **********************************/
+
+.bestViewImg {
+	height:400px;
+	width: 600px;
 }
+
 
 /************************************************ Contact Page ***************************************************************/
 
@@ -705,8 +713,10 @@ form { max-width:420px; margin:-20px auto;
 	margin-bottom: 50px;
 }
 
+
+
 .feedback-input {
-  color:white;
+  color:black;
   font-family: Helvetica, Arial, sans-serif;
   font-weight:500;
   font-size: 18px;
@@ -718,7 +728,8 @@ form { max-width:420px; margin:-20px auto;
   padding: 15px;
   margin-bottom: 15px;
   width:100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   outline:0;
 }
 
@@ -746,8 +757,6 @@ textarea {
   font-weight:700;
 }
 [type="submit"]:hover { background:hsl(195, 63%, 70%); }
-
-
 
 /************************************************ Top Scroll Button **********************************************************/
 
@@ -791,6 +800,11 @@ textarea {
 	
 	body {
   padding-bottom: 10rem; }
+
+  .bestViewImg {
+	height:300px;
+	width: 500px;
+}
 
   .ParallaxContainer h1 {
    font-size: 100px;
@@ -891,6 +905,7 @@ textarea {
 		justify-content: center;
 	}
 
+
 	  .ParallaxContainer h1 {
   		font-size: 80px;
   		line-height: 80px;
@@ -965,6 +980,11 @@ textarea {
 	#socialMediaBar {
 	top: 94.5%;	}
 
+		.bestViewImg {
+	height:250px;
+	width: 350px;
+}
+
 
 	.wrapper {
 		max-width: 400px;
@@ -986,6 +1006,11 @@ textarea {
 	height: 150px;
 	width: 300px;	
 	font-size:2rem;}
+	
+			.bestViewImg {
+	height:200px;
+	width: 300px;
+}
 
 	.middle, .middle_2 {
 	margin-top: 177px;
