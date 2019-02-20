@@ -812,13 +812,19 @@ textarea {
 }
 
 .middle, .middle_2 {
-	margin-top: 235px;
-	margin-left: -330px;
+	margin-top: 180px;
+	margin-left: -60px;
+	width:460px;
+	/*margin-top: 233px;*/
+	/*margin-left: -335px;*/
 	/*margin-left: -85px;}*/}
 
 .middle_3, .middle_4, .middle_5 {
-	margin-top: 234px;
-	margin-left: -270px;
+	margin-top: 160px;
+	margin-left: -5px;
+	width:265px;
+	/*margin-top: 233px;
+	margin-left: -275px;*/
 	/*margin-left: -85px;*/}
 
 .cphViewsText, .bestBahnMi_text, .streetTour_text, .bestParks_text, .bestBakeries_text {
@@ -907,7 +913,7 @@ textarea {
 
 
 	  .ParallaxContainer h1 {
-  		font-size: 80px;
+  		font-size: 65px;
   		line-height: 80px;
  		margin-top: -20px;
 	}
@@ -1013,12 +1019,22 @@ textarea {
 }
 
 	.middle, .middle_2 {
-	margin-top: 177px;
-	margin-left: -232px;}
+	display:none;
+	/*margin-top: 145px;
+	margin-left: -60px;
+	width:360px;*/
+	/*margin-top: 233px;*/
+	/*margin-left: -335px;*/
+	/*margin-left: -85px;}*/}
 
-	.middle_3, .middle_4, .middle_5 {
-	margin-top: 177px;
-	margin-left: -170px;}
+.middle_3, .middle_4, .middle_5 {
+	display:none;
+	/*margin-top: 140px;
+	margin-left: -5px;
+	width:165px;*/
+	/*margin-top: 233px;
+	margin-left: -275px;*/
+	/*margin-left: -85px;*/}
 
 	#socialMediaBar {
 	top: 93.5%;	
